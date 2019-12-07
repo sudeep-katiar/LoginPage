@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Image</h2>
+<img src="/home/user/sudeep/loginpage/login/Login/src/main/webapp/bg.jpg" alt="Trulli" width="500" height="333">
+
+</body>
+</html>
