@@ -12,16 +12,16 @@
 		response.setHeader("Pragma", "no-cache");//HTTP 1.0
 		response.setHeader("Expires", "0");// Proxtes
 
-		 if (session.getAttribute("username") == null) {
+		if (session.getAttribute("username") == null) {
 			response.sendRedirect("login.jsp");
-		} 
+		}
 	%>
 	<h1>
 		Welcome <br>
 	</h1>
 	<a href="register.jsp">To Add Data Click Here...</a>
 
-	<form action="LogoutServlet">
+	<form action="LogoutServlet" method="post">
 		<input type="submit" value="Logout">
 	</form>
 </body>

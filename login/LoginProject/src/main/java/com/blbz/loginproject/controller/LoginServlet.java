@@ -16,7 +16,7 @@ import com.blbz.loginproject.serviceimpl.UserServiceImpl;
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		User user = new User();
 		String uname = request.getParameter("username");
@@ -33,7 +33,6 @@ public class LoginServlet extends HttpServlet {
 				response.sendRedirect("login.jsp");
 			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
