@@ -20,7 +20,7 @@ import com.mysql.cj.xdevapi.Statement;
 public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("unused")
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
@@ -37,6 +37,7 @@ public class Register extends HttpServlet {
 		String f = request.getParameter("hired_date");
 		String g = request.getParameter("phone_number");
 		String h = request.getParameter("pincode");
+		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/KTR", "sudeep", "sudeep123");
@@ -51,12 +52,12 @@ public class Register extends HttpServlet {
 			ps.setString(6, f);
 			ps.setString(7, g);
 			ps.setString(8, h);
-
-			con.close(); 
 			
 			int i = ps.executeUpdate();
 			if (i > 0)
 				response.sendRedirect("success.jsp");
+			
+			con.close(); 
 		} catch (Exception e2) {
 			System.out.println(e2);
 		}

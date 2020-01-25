@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.blbz.loginproject.model.User;
 import com.blbz.loginproject.service.UserService;
 import com.blbz.loginproject.serviceimpl.UserServiceImpl;
 
@@ -18,7 +17,6 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		User user = new User();
 		String uname = request.getParameter("username");
 		String pswd = request.getParameter("password");
 

@@ -19,7 +19,13 @@
 	<h1>
 		Welcome <br>
 	</h1>
-	<a href="register.jsp">To Add Data Click Here...</a>
+	<a href="register.jsp">To Add Data Click Here...</a>&emsp;
+	
+	<a href="success.jsp">To See Database Click Here...</a><br><br>
+	
+	<FORM ACTION="success.jsp" method="post">
+					<button type="submit">See Data</button>
+				</FORM>
 
 	<form action="LogoutServlet" method="post">
 		<input type="submit" value="Logout">

@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/user/sudeep/loginpage/login/LoginProject"/>
 			<item value="/home/user/sudeep/loginpage/login/LoginRegistration"/>
 			<item value="/home/user/sudeep/loginpage/login/Demoapp/src/main/webapp/WEB-INF/web.xml"/>
 			<item value="/home/user/sudeep/loginpage/login/Login"/>
@@ -28,23 +29,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.blblz.loginregistration.LoginProject"/>
-			<item value="com.blblz.loginregistration.LoginRegistration"/>
-			<item value="com.blblz.demo.Demoapp"/>
-			<item value="com.blblz.loginpage.Login"/>
-			<item value="com.blblz.loginpage"/>
-			<item value="com.blblz.loginpage.LoginRegistration"/>
 		</list>
 		<list key="groupId">
-			<item value="com.blblz.loginregistration"/>
-			<item value="com.blblz.demo"/>
-			<item value="com.blblz.loginpage"/>
 		</list>
 		<list key="artifactId">
-			<item value="LoginProject"/>
-			<item value="LoginRegistration"/>
-			<item value="Demoapp"/>
-			<item value="Login"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
